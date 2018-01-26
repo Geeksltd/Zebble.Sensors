@@ -107,11 +107,6 @@
     <None Include="project.json" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="Zebble.UWP">
-      <HintPath>E:\Zebble\ZebbleSource-All-Current\lib\Zebble.UWP.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="Accelerometer.cs" />
     <Compile Include="EnvironmentSimulator.cs" />
     <Compile Include="Compass.cs" />

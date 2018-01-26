@@ -1,8 +1,8 @@
 ﻿namespace Zebble.Device
 {
-    using System;
-    using Foundation;
     using CoreMotion;
+    using Foundation;
+    using System;
 
     public partial class Gyroscope : Sensor<MotionVector>
     {

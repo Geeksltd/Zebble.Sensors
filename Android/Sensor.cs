@@ -1,9 +1,9 @@
 ﻿namespace Zebble.Device
 {
-    using System;
     using Android.Content;
     using Android.Hardware;
     using Android.Runtime;
+    using System;
 
     partial class Sensor<TValue> : Java.Lang.Object, ISensorEventListener
     {

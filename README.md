@@ -5,12 +5,11 @@
 
 ![logo]
 
-A Zebble plugin to use device sensors in Zebble applications.
+A plugin to access device sensors (such as Compass, Accelerometer and Gyroscope) in Zebble applications.
 
 
 [![NuGet](https://img.shields.io/nuget/v/Zebble.Sensors.svg?label=NuGet)](https://www.nuget.org/packages/Zebble.Sensors/)
 
-> This plugin make you able to access to the device sensors such as Accelerometer, Gyroscope, etc. on Android, IOS, and UWP platforms.
 
 <br>
 

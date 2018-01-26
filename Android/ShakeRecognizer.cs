@@ -1,8 +1,8 @@
 ﻿namespace Zebble.Device
 {
-    using System;
     using Android.Hardware;
     using Android.Runtime;
+    using System;
 
     class ShakeRecognizer : Java.Lang.Object, ISensorEventListener
     {

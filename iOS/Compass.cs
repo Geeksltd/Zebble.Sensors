@@ -1,7 +1,7 @@
 ﻿namespace Zebble.Device
 {
-    using System;
     using CoreLocation;
+    using System;
 
     public partial class Compass : Sensor<double>
     {
