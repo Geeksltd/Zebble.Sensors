@@ -9,19 +9,19 @@
 
         static Sensors()
         {
-            UIRuntime.OnResume.Handle(() =>
+            App.CameToForeground += () =>
             {
                 if (Accelerometer.ShouldDetectShaking)
                     Thread.Pool.RunActionOnNewThread(RegisterShakeHandler);
-            });
+            };
 
-            UIRuntime.OnPause.Handle(() =>
+            App.WentIntoBackground += () =>
             {
                 if (Accelerometer.ShouldDetectShaking)
                 {
                     UIRuntime.GetService<SensorManager>(Context.SensorService).UnregisterListener(ShakeRecognizer);
                 }
-            });
+            };
         }
 
         static void RegisterShakeHandler()
