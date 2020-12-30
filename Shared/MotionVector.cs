@@ -1,6 +1,6 @@
 ﻿namespace Zebble
 {
-    using System;
+    using Olive;
 
     [EscapeGCop("X, Y, and Z are actually good names here.")]
     public struct MotionVector
