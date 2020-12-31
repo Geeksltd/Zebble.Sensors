@@ -9,7 +9,7 @@
         public static SimulatedSensor<MotionVector> Accelerometer, Gyroscope;
         public static SimulatedSensor<double> Compass;
 
-        public static Services.GeoPosition Location;
+        public static GeoPosition Location;
 
         public static void Start()
         {
