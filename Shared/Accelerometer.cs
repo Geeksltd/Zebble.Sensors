@@ -1,5 +1,7 @@
 ﻿namespace Zebble.Device
 {
+    using Olive;
+
     public partial class Accelerometer : Sensor<MotionVector>
     {
         /// <summary>
