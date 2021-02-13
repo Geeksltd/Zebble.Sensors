@@ -16,7 +16,7 @@
             Accelerometer = acc;
             if (!Accelerometer.IsAvailable()) return;
 
-            Accelerometer.Start(SenrorDelay.UI).RunInParallel();
+            Accelerometer.Start(SensorDelay.UI).RunInParallel();
             Accelerometer.Changed.Handle((Action<MotionVector>)OnChanged);
         }
 

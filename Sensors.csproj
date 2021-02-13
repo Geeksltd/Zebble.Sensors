@@ -65,8 +65,8 @@
     <None Remove="Zebble-LicenseAgreement.txt" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Olive.GeoLocation" Version="2.1.107" />
-    <PackageReference Include="Zebble" Version="4.5.471" />
+    <PackageReference Include="Olive.GeoLocation" Version="2.1.109" />
+    <PackageReference Include="Zebble" Version="4.5.473" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Android\" />
