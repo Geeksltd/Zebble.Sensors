@@ -12,7 +12,7 @@
 
         public bool IsAvailable() => Sensor != null;
 
-        protected override void DoStart(SenrorDelay delay)
+        protected override void DoStart(SensorDelay delay)
         {
             if (EnvironmentSimulator.Gyroscope != null)
             {

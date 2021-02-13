@@ -4,7 +4,7 @@
     {
         public override void Stop() { }
 
-        protected override void DoStart(SenrorDelay delay)
+        protected override void DoStart(SensorDelay delay)
         {
             OnChanged(false);
         }
