@@ -10,7 +10,7 @@
 
         public bool IsAvailable() => Sensor != null;
 
-        protected override void DoStart(SenrorDelay delay)
+        protected override void DoStart(SensorDelay delay)
         {
             if (EnvironmentSimulator.Compass != null)
                 EnvironmentSimulator.Compass.Changed += OnChanged;

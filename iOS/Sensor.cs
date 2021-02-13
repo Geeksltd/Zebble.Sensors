@@ -14,6 +14,6 @@
 
         public abstract void Stop();
 
-        protected abstract void DoStart(SenrorDelay delay);
+        protected abstract void DoStart(SensorDelay delay);
     }
 }

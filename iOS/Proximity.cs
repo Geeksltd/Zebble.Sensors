@@ -14,7 +14,7 @@
             NSNotificationCenter.DefaultCenter.RemoveObserver(UIDevice.ProximityStateDidChangeNotification);
         }
 
-        protected override void DoStart(SenrorDelay delay)
+        protected override void DoStart(SensorDelay delay)
         {
             UIDevice.CurrentDevice.ProximityMonitoringEnabled = true;
             NSNotificationCenter.DefaultCenter.AddObserver(UIDevice.ProximityStateDidChangeNotification, (a) => OnChanged(UIDevice.CurrentDevice.ProximityState));

@@ -5,13 +5,13 @@
 
     public abstract partial class Sensor<TValue>
     {
-        public const SenrorDelay DEFAULT_DELAY = SenrorDelay.Game;
+        public const SensorDelay DEFAULT_DELAY = SensorDelay.Game;
         public bool IsActive { get; protected set; }
         public readonly AsyncEvent<TValue> Changed = new AsyncEvent<TValue>();
 
         protected void OnChanged(TValue value) => Thread.Pool.Run(() => Changed.Raise(value));
 
-        public async Task Start(SenrorDelay delay = SenrorDelay.Game, OnError errorAction = OnError.Toast)
+        public async Task Start(SensorDelay delay = SensorDelay.Game, OnError errorAction = OnError.Toast)
         {
             try
             {

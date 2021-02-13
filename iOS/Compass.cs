@@ -7,7 +7,7 @@
     {
         public bool IsAvailable() => CLLocationManager.HeadingAvailable;
 
-        protected override void DoStart(SenrorDelay _)
+        protected override void DoStart(SensorDelay _)
         {
             if (!IsAvailable()) throw new Exception("Compass is not available on this device.");
 

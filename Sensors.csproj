@@ -6,10 +6,10 @@
     <RootNamespace>Zebble</RootNamespace>
     <PackageId>Zebble.Sensors</PackageId>
     <Product>$(AssemblyName) ($(TargetFramework))</Product>
-    <Version>1.1.111.0</Version>
+    <Version>1.1.112.0</Version>
     <PackOnBuild>true</PackOnBuild>
     <NeutralLanguage>en</NeutralLanguage>
-    <DefineConstants>$(DefineConstants);</DefineConstants>
+    <DefineConstants>$(DefineConstants)</DefineConstants>
     <UseFullSemVerForNuGet>false</UseFullSemVerForNuGet>
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
     <LangVersion>latest</LangVersion>
@@ -37,14 +37,14 @@
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" $(TargetFramework.StartsWith('uap10.0')) ">
-    <DefineConstants>UWP</DefineConstants>
+    <DefineConstants>$(DefineConstants);UWP</DefineConstants>
   </PropertyGroup>
   <PropertyGroup Condition=" $(TargetFramework.StartsWith('MonoAndroid')) ">
-    <DefineConstants>ANDROID</DefineConstants>
+    <DefineConstants>$(DefineConstants);ANDROID</DefineConstants>
     <AndroidUseIntermediateDesignerFile>false</AndroidUseIntermediateDesignerFile>
   </PropertyGroup>
   <PropertyGroup Condition=" $(TargetFramework.StartsWith('Xamarin.iOS')) ">
-    <DefineConstants>IOS</DefineConstants>
+    <DefineConstants>$(DefineConstants);IOS</DefineConstants>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Shared\**\*.cs" />
@@ -65,8 +65,8 @@
     <None Remove="Zebble-LicenseAgreement.txt" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Olive.GeoLocation" Version="2.1.106" />
-    <PackageReference Include="Zebble" Version="4.5.447" />
+    <PackageReference Include="Olive.GeoLocation" Version="2.1.107" />
+    <PackageReference Include="Zebble" Version="4.5.471" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Android\" />

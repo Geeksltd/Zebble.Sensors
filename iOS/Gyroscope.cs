@@ -8,7 +8,7 @@
     {
         public bool IsAvailable() => MotionManager.GyroAvailable;
 
-        protected override void DoStart(SenrorDelay delay)
+        protected override void DoStart(SensorDelay delay)
         {
             if (!IsAvailable()) throw new Exception("Gyroscope is not available on this device.");
 

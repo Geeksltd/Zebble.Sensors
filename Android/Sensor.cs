@@ -42,18 +42,18 @@
 
         public abstract void OnSensorChanged(SensorEvent args);
 
-        protected SensorDelay GetDelay(SenrorDelay delay)
+        protected SensorDelay GetDelay(Zebble.SensorDelay delay)
         {
             switch (delay)
             {
-                case SenrorDelay.Realtime: return SensorDelay.Fastest;
-                case SenrorDelay.Game: return SensorDelay.Game;
-                case SenrorDelay.UI: return SensorDelay.Ui;
+                case Zebble.SensorDelay.Realtime: return SensorDelay.Fastest;
+                case Zebble.SensorDelay.Game: return SensorDelay.Game;
+                case Zebble.SensorDelay.UI: return SensorDelay.Ui;
                 default: return SensorDelay.Normal;
             }
         }
 
-        void DoStart(SenrorDelay delay)
+        void DoStart(Zebble.SensorDelay delay)
         {
             if (_Sensor == null) throw new Exception(Type + " is not available on this device.");
             SensorManager.RegisterListener(this, _Sensor, GetDelay(delay));
